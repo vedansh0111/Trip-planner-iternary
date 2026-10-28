@@ -69,7 +69,7 @@ travel-itinerary-planner/
 Open a terminal in this directory and run:
 
 ```bash
-python -m streamlit run app.py
+python -m streamlit run streamlitapp.py
 ```
 
 The app will launch in your browser at `http://localhost:8501`.
@@ -86,7 +86,7 @@ python -m pytest tests/test_planner.py -v
 ### Streamlit Community Cloud
 1. Push this repository to GitHub.
 2. Visit [share.streamlit.io](https://share.streamlit.io) and click **"New app"**.
-3. Select your repository, branch (`main`), and set **Main file path** to `app.py`.
+3. Select your repository, branch (`main`), and set **Main file path** to `streamlitapp.py`.
 4. (Optional) In **Advanced Settings > Secrets**, configure:
    ```toml
    GEMINI_API_KEY = "your-gemini-key"
@@ -98,4 +98,4 @@ python -m pytest tests/test_planner.py -v
 1. In `render.yaml` or Render dashboard, create a new **Web Service**.
 2. **Environment:** Python
 3. **Build Command:** `pip install -r requirements.txt`
-4. **Start Command:** `streamlit run app.py --server.port $PORT --server.address 0.0.0.0`
+4. **Start Command:** `streamlit run streamlitapp.py --server.port $PORT --server.address 0.0.0.0`
